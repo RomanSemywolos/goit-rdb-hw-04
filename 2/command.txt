@@ -1,0 +1,22 @@
+2. Заповніть таблиці простими видуманими тестовими даними. Достатньо одного-двох рядків у кожну таблицю.
+
+INSERT INTO authors (author_name) VALUES
+('George Orwell'),
+('Jane Austen');
+
+INSERT INTO genres (genre_name) VALUES
+('Dystopian'),
+('Romance');
+
+ALTER TABLE books MODIFY COLUMN publication_year INT;
+INSERT INTO books (title, publication_year, author_id, genre_id) VALUES
+('1984', 1949, 1, 1),
+('Pride and Prejudice', 1813, 2, 2);
+
+INSERT INTO users (username, email) VALUES
+('john_doe', 'john.doe@example.com'),
+('jane_smith', 'jane.smith@example.com');
+
+INSERT INTO borrowed_books (book_id, user_id, borrow_date, return_date) VALUES
+(1, 1, '2024-11-01', '2024-11-15'),
+(2, 2, '2024-11-02', '2024-11-16');
